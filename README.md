@@ -23,16 +23,19 @@ A machine learning model trained on real-world phishing datasets could learn con
 ```bash
 git clone https://github.com/YOUR_USERNAME/phishing-email-detector.git
 cd phishing-email-detector
+```
 
 
 ### Run the phishing detector
 ```bash
   python src/detector.py
+```
 
 ### Run the web dashboard
 ```bash
 cd web
 python -m http.server
+```
 
 
 
