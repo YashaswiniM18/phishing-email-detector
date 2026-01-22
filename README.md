@@ -21,7 +21,7 @@ A machine learning model trained on real-world phishing datasets could learn con
 
 ### Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/phishing-email-detector.git
+git clone https://github.com/YashaswiniM18/phishing-email-detector.git
 cd phishing-email-detector
 ```
 
