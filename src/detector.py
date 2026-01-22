@@ -28,9 +28,9 @@ def classify_email(text):
         return "Likely Phishing"
     return "Safe"
 
-# Correct file path
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV_PATH = os.path.join(BASE_DIR, "data", "emails.csv")
+RESULTS_PATH = os.path.join(BASE_DIR, "web", "results.json")  # ✅ only here
 
 emails = []
 phishing_count = 0
@@ -52,9 +52,11 @@ summary = {
     "emails": emails
 }
 
-with open("results.json", "w") as f:
+with open(RESULTS_PATH, "w") as f:
     json.dump(summary, f, indent=4)
 
 print("Total Emails:", summary["total_emails"])
 print("Phishing Detected:", summary["phishing_detected"])
+print("results.json saved in web/ folder")
+
 

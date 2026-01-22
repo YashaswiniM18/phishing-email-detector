@@ -22,4 +22,4 @@ A machine learning model trained on real-world phishing datasets could learn con
 python src/detector.py
 ```
 
-This generates `results.json` and prints a summary in the terminal.
+
