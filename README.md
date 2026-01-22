@@ -28,7 +28,7 @@ cd phishing-email-detector
 
 ### Run the phishing detector
 ```bash
-  python src/detector.py
+python src/detector.py
 ```
 
 ### Run the web dashboard
@@ -37,5 +37,6 @@ cd web
 python -m http.server
 ```
 
-
+Then open in browser:
+http://localhost:8000/index.html
 
