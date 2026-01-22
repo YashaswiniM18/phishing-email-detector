@@ -1,0 +1,25 @@
+email,label
+"Your account has been compromised. Click here to verify your password immediately.",phishing
+"Meeting rescheduled to 3 PM tomorrow. Please confirm.",safe
+"URGENT: Update your bank details to avoid suspension.",phishing
+"Happy birthday! Hope you have a great year ahead.",safe
+"Your PayPal account is locked. Login now to restore access.",phishing
+"Here is the report you asked for.",safe
+"Verify your email address to avoid account termination.",phishing
+"Team lunch tomorrow at 1 PM.",safe
+"You have won a free gift card. Click here!",phishing
+"Please review the attached project document.",safe
+"Security alert: unusual activity detected in your account.",phishing
+"Can we reschedule our call?",safe
+"Reset your password immediately.",phishing
+"Invoice for last month's services attached.",safe
+"Act now! Limited time offer expires today.",phishing
+"Your interview is scheduled for Monday.",safe
+"Confirm your identity to avoid suspension.",phishing
+"Looking forward to our meeting.",safe
+"Click here to claim your prize.",phishing
+"Project deadline extended by two days.",safe
+"Verify your account immediately.",phishing
+"Lunch plans today?",safe
+"Your account will be locked unless you act now.",phishing
+"Thanks for your help earlier.",safe

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rule-Based Phishing Email Detection System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rule-Based Phishing Email Detection System</h1>
+
+    <div class="stats">
+        <p><strong>Total Emails Analyzed:</strong> <span id="total">Loading...</span></p>
+        <p><strong>Phishing Emails Detected:</strong> <span id="phishing">Loading...</span></p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Email Preview</th>
+                <th>Detection Result</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <script>
+        fetch("./results.json")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("total").textContent = data.total_emails;
+                document.getElementById("phishing").textContent = data.phishing_detected;
+
+                const tbody = document.getElementById("table-body");
+                tbody.innerHTML = "";
+
+                data.emails.forEach(item => {
+                    const row = document.createElement("tr");
+
+                    const emailCell = document.createElement("td");
+                    emailCell.textContent = item.email.slice(0, 60) + "...";
+
+                    const resultCell = document.createElement("td");
+                    resultCell.textContent = item.result;
+                    resultCell.className = item.result === "Likely Phishing" ? "phish" : "safe";
+
+                    row.appendChild(emailCell);
+                    row.appendChild(resultCell);
+                    tbody.appendChild(row);
+                });
+            })
+            .catch(err => {
+                console.error("Failed to load results.json", err);
+                document.getElementById("total").textContent = "Error";
+                document.getElementById("phishing").textContent = "Error";
+            });
+    </script>
+</body>
+</html>
+
+
