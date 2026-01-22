@@ -30,7 +30,7 @@ def classify_email(text):
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV_PATH = os.path.join(BASE_DIR, "data", "emails.csv")
-RESULTS_PATH = os.path.join(BASE_DIR, "web", "results.json")  # ✅ only here
+RESULTS_PATH = os.path.join(BASE_DIR, "web", "results.json")  
 
 emails = []
 phishing_count = 0
