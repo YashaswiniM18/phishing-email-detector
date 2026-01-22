@@ -18,8 +18,21 @@ This system relies on fixed rules and keywords, so it may fail to detect new phi
 A machine learning model trained on real-world phishing datasets could learn contextual patterns and improve detection accuracy and adaptability.
 
 ## How to Run
+
+### Clone the repository
 ```bash
-python src/detector.py
-```
+git clone https://github.com/YOUR_USERNAME/phishing-email-detector.git
+cd phishing-email-detector
+
+
+### Run the phishing detector
+```bash
+  python src/detector.py
+
+### Run the web dashboard
+```bash
+cd web
+python -m http.server
+
 
 
